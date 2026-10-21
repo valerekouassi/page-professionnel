@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon professionnel</title>
+
+    <link rel="stylesheet" href="styles.css">
+     <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Menu de navigation -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">MonSite</h2>
+
+            <button id="menuBtn" class="menu-btn">
+                ☰
+            </button>
+
+            <ul id="menu" class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="modeBtn">Mode sombre</button>
+
+        </nav>
+    </header>
+
+    <!-- Accueil -->
+    <section id="accueil" class="accueil">
+
+        <h1>Bienvenue sur mon site web !</h1>
+
+        <p>
+            J'apprends le développement web avec HTML, CSS et JavaScript.
+        </p>
+
+        <button id="voirPlusBtn">En savoir plus</button>
+
+        <p id="description" hidden>
+            Mon objectif est de devenir un excellent développeur front-end.
+        </p>
+
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="section">
+
+        <h2>À propos de moi</h2>
+
+        <p>
+            Je crée des sites web modernes, simples et agréables à utiliser.
+        </p>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+
+        <h2>Contactez-moi</h2>
+
+        <form id="contactForm">
+
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" placeholder="Entrez votre nom" required>
+
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" placeholder="Entrez votre e-mail" required>
+
+            <label for="message">Votre message</label>
+            <textarea id="message" placeholder="Écrivez votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+        <p id="resultat"></p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 MonSite — Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html> 
+
+
