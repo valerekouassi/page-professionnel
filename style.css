@@ -1,0 +1,180 @@
+/* Réglages généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #222;
+    transition: 0.3s;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+.logo {
+    color: #1769e0;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #1769e0;
+}
+
+button {
+    background: #1769e0;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0d4da8;
+    transform: translateY(-2px);
+}
+
+/* Bouton du menu mobile */
+.menu-btn {
+    display: none;
+}
+
+/* Accueil */
+.accueil {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #e5efff, #ffffff);
+}
+
+.accueil h1 {
+    font-size: 40px;
+    color: #1769e0;
+    margin-bottom: 20px;
+}
+
+.accueil p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* Sections */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+    color: #1769e0;
+}
+
+/* Formulaire */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1769e0;
+    color: white;
+}
+
+/* Mode sombre */
+body.sombre {
+    background: #181818;
+    color: #f5f5f5;
+}
+
+body.sombre .navbar {
+    background: #252525;
+}
+
+body.sombre .menu a {
+    color: white;
+}
+
+body.sombre .accueil {
+    background: #202020;
+}
+
+body.sombre input,
+body.sombre textarea {
+    background: #303030;
+    color: white;
+    border-color: #555;
+}
+
+/* Téléphones et petites tablettes */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu.ouvert {
+        display: flex;
+    }
+
+    .accueil h1 {
+        font-size: 30px;
+    }
+}
